@@ -22,6 +22,13 @@
     public class Attributes
     {
         //attributes of exercise-Do not need all of these every time
+        //set bools to true when in use
+        bool? isTime = null;
+        bool? isDistance = null;
+        bool? isWeight = null;
+        bool? isSets = null;
+        bool? isReps = null;
+
         int hours = 0;
         int minutes = 0;
         int seconds = 0;
