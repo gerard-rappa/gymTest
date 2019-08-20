@@ -1,15 +1,27 @@
-﻿namespace gymTest
+﻿using System.Collections.Generic;
+
+namespace gymTest
 {
     public class Routine
     {
         Category day;
-        Exercise[] exercises;
+        List<Exercise> exercises;
+
+        public Routine()
+        {
+
+        }
     }
 
     public class Category
     {
         //leg day, cardio day, etc.
         string category;
+
+        public Category(string day)
+        {
+            this.category = day;
+        }
     }
 
     public class Exercise
@@ -23,11 +35,11 @@
     {
         //attributes of exercise-Do not need all of these every time
         //set bools to true when in use
-        bool? isTime = null;
-        bool? isDistance = null;
-        bool? isWeight = null;
-        bool? isSets = null;
-        bool? isReps = null;
+        bool isTime = false;
+        bool isDistance = false;
+        bool isWeight = false;
+        bool isSets = false;
+        bool isReps = false;
 
         int hours = 0;
         int minutes = 0;
